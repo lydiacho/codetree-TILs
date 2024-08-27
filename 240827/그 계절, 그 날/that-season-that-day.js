@@ -15,7 +15,7 @@ function isYunNyeon (year) {
 }
 
 function solution(y, m, d) {
-    const arr = Array.from({length: 13}, (_, i)=> i%2===0 ? 30 : 31);
+    const arr = [-1, 31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     arr[2] = isYunNyeon(y) ? 29 : 28;
 
     if (d > arr[m]) return -1;
