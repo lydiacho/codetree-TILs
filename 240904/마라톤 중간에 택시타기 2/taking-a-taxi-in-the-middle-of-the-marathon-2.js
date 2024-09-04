@@ -6,7 +6,7 @@ const [n, ...arr] = fs.readFileSync(0).toString().trim().split('\n');
 const pos = arr.map(v=>v.split(' ').map(w=>+w));
 
 function solution(n, pos) {
-    let min = 4000;
+    let min = 400000;
 
     // 각 체크포인트를 빠질 때 거리 구하기 
     for (let i = 1; i<n-1; i++) {
