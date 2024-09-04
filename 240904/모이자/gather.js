@@ -4,7 +4,7 @@ const [n, arr] = fs.readFileSync(0).toString().trim().split('\n');
 const A = arr.split(' ').map(v=>+v);
 
 function solution (n, A) {
-    let min = 10000;
+    let min = 100*100*100;
     for (let i =  0; i < n; i++) {
         let sum = 0;
         for (let j = 0; j < n; j++) {
