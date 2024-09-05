@@ -9,7 +9,7 @@ function solution(N, H, T, arrN) {
     // 가능한 T개 묶음의 케이스 순회하면서 비용 계산하기 
     for (let i = 0; i <= N-T ; i++) {
         let sum = 0;
-        for (let j = 0; j <= i; j++) {
+        for (let j = i; j < i+T; j++) {
             sum += Math.abs(arrN[j]-H);
         }
         answer = Math.min(answer, sum);
